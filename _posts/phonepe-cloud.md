@@ -9,9 +9,9 @@ comments: true
 author: Jay Bhanushali
 ---
 
-# 📡 PhonePe Cloud (PPEC) — Simplified Overview
+# PhonePe Cloud (PPEC) — Simplified Overview
 
-## 🚀 What is PPEC?
+## What is PPEC?
 
 **PPEC (PhonePe Cloud)** is PhonePe’s internal cloud provisioning system. It's like their private version of AWS, designed to fit how their internal teams work.
 
@@ -24,7 +24,7 @@ It helps teams:
 
 ---
 
-## 🌱 Why Was PPEC Built?
+##  Why Was PPEC Built?
 
 - Earlier, a few experts handled infrastructure with tribal knowledge.
 - As PhonePe scaled, many teams (non-experts too) needed to provision servers.
@@ -32,37 +32,37 @@ It helps teams:
 
 ---
 
-## 🧠 Key Design Goals
+##  Key Design Goals
 
-1. ✅ Single client usable across all regions (with proper authorization)
-2. 📜 Auditability and changelogs
-3. 🧱 Full lifecycle support: from racking → inventory → provisioning → retiring
+1.  Single client usable across all regions (with proper authorization)
+2.  Auditability and changelogs
+3.  Full lifecycle support: from racking → inventory → provisioning → retiring
 
 ---
 
-## ⚙️ Core Workflows
+##  Core Workflows
 
-### 🆕 1. New Inventory Handling
+###  1. New Inventory Handling
 - New server boots into **PIOUS** (PhonePe Inventory OS)
 - Verifies hardware specs and health
 - Promotes healthy machines to a SPARE state
 - SPAREs = ready-to-use machines, classified by type
 
-### 🖥 2. Baremetal Provisioning
+###  2. Baremetal Provisioning
 - SPAREs become **BAREMETALs** (production servers)
 - Hardened OS images installed via PIOUS
 - Hardware integrity is checked during provisioning
 
-### 💻 3. Virtual Machine Management
+###  3. Virtual Machine Management
 - Uses **KVM + libvirt + QEMU**
 - VM placement done via **Mesos** (for now)
 - Migration planned to a **custom placement algorithm**
 
 ---
 
-## 🧰 Interfaces to Use PPEC
+##  Interfaces to Use PPEC
 
-### 🖥 PPEC Client (CLI)
+###  PPEC Client (CLI)
 - Query assets
 - Provision VMs or baremetals
 - Manage IPs, networks, regions
@@ -70,20 +70,20 @@ It helps teams:
 - RBAC (role-based access control)
 - Maker-checker system
 
-### 📊 PPEC Dashboard (Web UI)
+###  PPEC Dashboard (Web UI)
 - Visual view of assets by region
 - Filter/search machines
 - Generate scoped credentials
 - Alerts and logs
 - Built-in docs & Swagger
 
-### 📦 PPEC SDK
+###  PPEC SDK
 - Programmatic API access
 - Used in automation, monitoring, CI/CD pipelines
 
 ---
 
-## ✅ Summary
+##  Summary
 
 PPEC is:
 - A cloud provisioning system made for **PhonePe’s internal use**
