@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Case Study: PhonePe Internal Cloud - Simplified Overview
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [cloud, case-study]
 comments: true
 author: Jay Bhanushali
@@ -22,7 +19,7 @@ It helps teams:
 - Manage everything from one place
 - Track and audit who does what
 
----
+
 
 ##  Why Was PPEC Built?
 
@@ -30,7 +27,7 @@ It helps teams:
 - As PhonePe scaled, many teams (non-experts too) needed to provision servers.
 - PPEC was built to make provisioning **easier**, **safer**, and **more reliable**.
 
----
+
 
 ##  Key Design Goals
 
@@ -38,7 +35,7 @@ It helps teams:
 2.  Auditability and changelogs
 3.  Full lifecycle support: from racking → inventory → provisioning → retiring
 
----
+
 
 ##  Core Workflows
 
@@ -58,7 +55,7 @@ It helps teams:
 - VM placement done via **Mesos** (for now)
 - Migration planned to a **custom placement algorithm**
 
----
+
 
 ##  Interfaces to Use PPEC
 
@@ -81,7 +78,6 @@ It helps teams:
 - Programmatic API access
 - Used in automation, monitoring, CI/CD pipelines
 
----
 
 ##  Summary
 
