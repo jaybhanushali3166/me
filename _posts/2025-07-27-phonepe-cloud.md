@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Case Study: PhonePe Internal Cloud - Simplified Overview
-tags: [cloud, case-study]
 comments: true
 author: Jay Bhanushali
+# tags: [cloud, case-study]
 ---
 
 # PhonePe Cloud (PPEC) — Simplified Overview
