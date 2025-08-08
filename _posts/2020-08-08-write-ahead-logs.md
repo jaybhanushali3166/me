@@ -3,7 +3,7 @@ layout: post
 title: Understanding Write-Ahead Logs (WALs)
 subtitle: The Foundation of Reliable Systems
 gh-repo: jaybhanushali3166/me
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 tags: [cloud]
 comments: true
 author: Jay Bhanushali
@@ -82,7 +82,6 @@ Kafka's strength lies in its **horizontal scalability**:
 - **Replication** ensures fault tolerance.
 - **Leaders and Followers** manage write/read flow across brokers.
 
----
 
 ### MongoDB
 
