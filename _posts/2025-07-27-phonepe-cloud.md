@@ -10,8 +10,6 @@ author: Jay Bhanushali
 # tags: [cloud, case-study]
 ---
 
-# PhonePe Cloud (PPEC) — Simplified Overview
-
 ## What is PPEC?
 
 **PPEC (PhonePe Cloud)** is PhonePe’s internal cloud provisioning system. It's like their private version of AWS, designed to fit how their internal teams work.

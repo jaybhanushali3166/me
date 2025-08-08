@@ -10,15 +10,9 @@ author: Jay Bhanushali
 # tags: [cloud, case-study]
 ---
 
-# Understanding Write-Ahead Logs (WALs)
-
-## The Foundation of Reliable Systems
-
 Modern distributed systems need to ensure **reliability**, **durability**, and **consistency** across crashes, delays, and replication. Whether you're working with databases like **PostgreSQL**, message brokers like **Kafka**, or document stores like **MongoDB**, there's one technique that underpins them all: the **Write-Ahead Log (WAL)**.
 
-This article explains what WALs are, why they're essential, and how they’re implemented across systems.
-
----
+We will quickly see, why they're essential, and how they’re implemented across systems.
 
 ## What Is a Write-Ahead Log?
 
@@ -31,6 +25,7 @@ In practice, every modification (insert/update/delete) is first appended to this
 
 
 ## Why WALs Matter
+
 
 ### Durability
 
@@ -50,6 +45,7 @@ Appending to a log is lightweight and efficient. Modern hardware handles sequent
 
 
 ## WAL in Action: System-Specific Implementations
+
 
 ### PostgreSQL
 
@@ -113,7 +109,6 @@ Despite differences in structure and application, PostgreSQL, Kafka, and MongoDB
 
 All follow the principle: **log first, apply later**.
 
----
 
 ## Final Thoughts
 
