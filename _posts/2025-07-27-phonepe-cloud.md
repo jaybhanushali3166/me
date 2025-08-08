@@ -1,6 +1,10 @@
 ---
 layout: post
-title: Case Study: PhonePe Internal Cloud - Simplified Overview
+title: Simplified Overview of PhonePe Internal Cloud
+subtitle: Case Study
+gh-repo: jaybhanushali3166/me
+gh-badge: [star, fork, follow]
+tags: [cloud]
 comments: true
 author: Jay Bhanushali
 # tags: [cloud, case-study]
