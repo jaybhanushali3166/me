@@ -20,11 +20,7 @@ author: Jay Bhanushali
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://jaybhanushali.in"
+  About Me: "aboutme/"
 
 ################
 # --- Logo --- #
@@ -50,14 +46,8 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
+  email: "jaybhanushali.dev@gmail.com"
   github: jaybhanushali3166
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -111,7 +101,7 @@ title-on-all-pages: true
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+feed_show_excerpt: false
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
@@ -126,6 +116,9 @@ edit_page_button: true
 # If this setting is off, then long sub-menu words might get cut off
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
 navbar-var-length: false
+
+# Remove theme attribution watermark in footer
+remove-ads: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"

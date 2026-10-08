@@ -7,8 +7,6 @@ gh-badge: [star, fork, follow]
 tags: [system-design, real-time, web]
 comments: true
 author: Jay Bhanushali
-tags: [system-design, real-time]
-System Design: Real-Time Communication
 ---
 
 # **System Design: Real-Time Communication**

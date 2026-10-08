@@ -1,3 +1,9 @@
+---
+layout: page
+title: About Me
+subtitle: Engineer, Builder & Learner
+---
+
 ### About me
 
 Hi! I’m Jay — a curious mind with a passion for building, learning, and sharing.

@@ -10,11 +10,11 @@ author: Jay Bhanushali
 # tags: [cloud, case-study]
 ---
 
+## What Is a Write-Ahead Log?
+
 Modern distributed systems need to ensure **reliability**, **durability**, and **consistency** across crashes, delays, and replication. Whether you're working with databases like **PostgreSQL**, message brokers like **Kafka**, or document stores like **MongoDB**, there's one technique that underpins them all: the **Write-Ahead Log (WAL)**.
 
 We will quickly see, why they're essential, and how they’re implemented across systems.
-
-## What Is a Write-Ahead Log?
 
 A **Write-Ahead Log (WAL)** is a sequential file where systems log every change before applying it to the actual data store. This approach ensures two things:
 
