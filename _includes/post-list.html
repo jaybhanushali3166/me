@@ -1,0 +1,14 @@
+{%- assign max = include.limit | default: 999 -%}
+<ul class="rows">
+  {%- for post in site.posts limit: max %}
+  <li class="row">
+    <time class="row-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    <div class="row-body">
+      <p><a href="{{ post.url | relative_url }}">{{ post.title | strip_html }}</a></p>
+      {%- if post.subtitle %}
+      <p class="row-sub">{{ post.subtitle | strip_html }}</p>
+      {%- endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

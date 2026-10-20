@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Jay Bhanushali's Blog
+title: Jay Bhanushali
 
 # Your name to show in the footer
 author: Jay Bhanushali
@@ -48,6 +48,7 @@ round-avatar: true
 social-network-links:
   email: "jaybhanushali.dev@gmail.com"
   github: jaybhanushali3166
+  linkedin: jay-bhanushali-profile
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -76,7 +77,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Writing on system design, storage and distributed systems by Jay Bhanushali.
 
 ###########################
 # --- General options --- #
@@ -257,7 +258,6 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
 
 kramdown:
   input: GFM
@@ -288,6 +288,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - skills-lock.json
 
 plugins:
   - jekyll-paginate

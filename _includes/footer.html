@@ -1,47 +1,18 @@
-<footer>
-  <div class="container-md beautiful-jekyll-footer">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-      {% include social-networks-links.html %}
-      {% if page.footer-extra %}
-        <div class="footer-custom-content">
-          {% for file in page.footer-extra %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-      <p class="copyright text-muted">
-      {% if site.author %}
-        {{ site.author }}
-        &nbsp;&bull;&nbsp;
-      {% endif %}
-      {{ site.time | date: '%Y' }}
-
-      {% if site.url-pretty %}
-        &nbsp;&bull;&nbsp;
-        <span class="author-site">
-          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
-        </span>
-      {% endif %}
-
-      {% if site.matomo %}
-        {% if site.matomo.opt-out %}
-          &nbsp;&bull;&nbsp;
-          <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
-        {% endif %}
-      {% endif%}
-
-      {% if site.edit_page_button and site.github.repository_url %}
-        &nbsp;&bull;&nbsp;
-        <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">Edit page</a>
-       {% endif%}
-
-      </p>
-      {% unless site.remove-ads %}<p class="theme-by text-muted">
-        Powered by
-        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-      </p>{% endunless %}
-      </div>
+{%- assign links = site.social-network-links %}
+<footer class="site-foot" id="contact">
+  <div class="wrap">
+    <p class="foot-stmt-line">Want to talk tech or products? Let’s connect.</p>
+    {%- if links.email %}
+    <p class="foot-cta"><a class="pill" href="mailto:{{ links.email }}">Email me</a></p>
+    {%- endif %}
+    <div class="foot-meta">
+      <p>© {{ site.time | date: '%Y' }} {{ site.author }}</p>
+      <ul class="foot-links">
+        {%- if links.github %}<li><a href="https://github.com/{{ links.github }}">GitHub&nbsp;↗</a></li>{% endif %}
+        {%- if links.linkedin %}<li><a href="https://linkedin.com/in/{{ links.linkedin }}">LinkedIn&nbsp;↗</a></li>{% endif %}
+        {%- if links.email %}<li><a href="mailto:{{ links.email }}">Email</a></li>{% endif %}
+        <li><a href="{{ '/aboutme/' | relative_url }}">About</a></li>
+      </ul>
     </div>
   </div>
 </footer>

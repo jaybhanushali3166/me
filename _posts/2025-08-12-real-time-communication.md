@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Real-Time Communication (System Design)
+title: Real-Time Communication
 subtitle: SSE vs WebSockets vs WebRTC
 gh-repo: jaybhanushali3166/me
 gh-badge: [star, fork, follow]
